@@ -12,7 +12,7 @@ class TestIsolated(unittest.TestCase):
         self.assertTrue(2 in indices)
 
         indices = stars.isolated(ex01, 0.0)
-        self.assertEqual(len(indices), 0)
+        self.assertEqual(len(indices), len(ex01))
 
         ex02 = [(0.0, 0.0),
                 (1.0, 1.0),
@@ -55,7 +55,7 @@ class TestIsolated(unittest.TestCase):
         self.assertTrue(index_with_isolated in indices)
 
         indices = stars.isolated(exbig01, 0.0)
-        self.assertEqual(len(indices), 0)
+        self.assertEqual(len(indices), len(exbig01))
 
 
 if __name__ == "__main__":

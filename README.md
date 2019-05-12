@@ -1,7 +1,7 @@
 # Isolated Stars
 
 Given a list of `(x, y)` pair tuples representing star positions on an image,
-return a list with isolated stars.
+return a list **with the indices** of the isolated stars.
 Isolated stars are stars that are at least farther than `dist_min` from any other
 stars.
 The returned list may be empty if no stars are isolated.
